@@ -1,0 +1,60 @@
+/* styles/globals.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+  }
+  
+  .full-page-popup, .compact-popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .compact-popup {
+    width: 60vw;
+    height: 40vh;
+    background: #fff;
+    border-radius: 8px;
+  }
+  
+  .popup-content {
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+  }
+  
+  .xp-bar {
+    width: 80%;
+    background: #e0e0e0;
+    height: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+  }
+  
+  .xp-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #4CAF50, #81C784);
+    border-radius: 10px;
+  }
+  
+  .new-badge {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    animation: bounce 1s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
